@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Trainer</title>
+    <style>
+        /* 1. Reset cơ bản và thiết lập font chữ */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        /* 2. Căn giữa toàn màn hình và tạo màu nền nhẹ nhàng */
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* 3. Khung chứa chính (Card) dạng nổi */
+        .welcome-container {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            width: 100%;
+            max-width: 420px; /* Không bị quá bè trên máy tính */
+            transition: transform 0.3s ease;
+        }
+
+        /* 4. Tiêu đề game */
+        .game-title {
+            font-size: clamp(1.8rem, 4vw, 2.4rem); /* Tự co giãn theo kích thước màn hình */
+            color: #1e293b;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        /* 5. Phụ đề mô tả ngắn */
+        .game-subtitle {
+            font-size: 1rem;
+            color: #64748b;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        /* 6. Nút Play bắt mắt và chuẩn UI */
+        .play-btn {
+            background-color: #2563eb; /* Xanh dương hiện đại */
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%; /* Trên điện thoại nút sẽ trải rộng dễ bấm */
+            transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Hiệu ứng khi di chuột vào hoặc chạm */
+        .play-btn:hover {
+            background-color: #1d4ed8;
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .play-btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h1 class="game-title">Algebra Trainer</h1>
+        <p class="game-subtitle">Luyện tập biến đổi đại số lớp 6-7</p>
+        <button class="play-btn" onclick="startGame()">Bắt Đầu Chơi</button>
+    </div>
+
+    <script>
+        function startGame() {
+            alert("Chuyển sang màn hình chơi game (đang phát triển)");
+            // Sau này bạn có thể thay bằng code chuyển trang hoặc ẩn hiện khung giao diện game ở đây
+        }
+    </script>
+
+</body>
+</html>
